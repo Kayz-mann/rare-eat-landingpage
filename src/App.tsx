@@ -13,11 +13,11 @@ function App() {
     <main>
       <Header />
 
-      <div className='px-16 items-center'>
+      <div className='lg:p-16 md:p-0 sm:p-0  lg:items-center md:items-center sm:items-center'>
         <FirstContactLayer />
         <SecondContactLayer />
       </div>
-      
+
       <Footer />
     </main>
   )

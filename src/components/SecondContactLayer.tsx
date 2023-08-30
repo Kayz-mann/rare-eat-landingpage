@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { FormDataProps } from './FirstContactLayer';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { Jelly } from '@uiball/loaders';
@@ -21,7 +21,6 @@ const SecondContactLayer = () => {
             setTimeout(() => {
                 setLoading(false);
                 setShowModal(true);
-
             }, 1500);
         }
 
@@ -40,14 +39,15 @@ const SecondContactLayer = () => {
                 Join Our Newsletter: Stay Connected, Savor Exclusives!
             </h1>
 
-            <p className='text-center mt-[16px] font-medium text-[16px] text-[#131313]'>
+            <p className='text-center mt-[16px] lg:mx-[16px] md:mx-[16px] sm:mx-[16px] px-2 font-medium lg:text-[16px] text-[#131313]'>
                 Subscribe to our newsletter and be a part of the vibrant Rare Eat Fresh community. Stay connected with the latest updates, exclusive offers, and exciting promotions on rare West African food ingredients.
             </p>
 
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-row items-center mt-[16px] justify-center'>
+
+            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col md:flex-row items-center mt-[16px] justify-center'>
                 <input
-                    className='m-2  bg-white h-[53px] w-[350px] rounded-[50px] px-[20px] py-[10px] outline-none
-                placeholder-[#626262] border border-[#131313]'
+                    className='m-2  bg-white lg:h-[53px] lg:w-[350px] md:w-[220px] rounded-[50px] px-[20px] py-[10px] outline-none
+        placeholder-[#626262] border border-[#131313]'
                     {...register('email')}
                     type='text'
                     placeholder='Email address'
@@ -55,12 +55,13 @@ const SecondContactLayer = () => {
 
                 <button
                     type='submit'
-                    className='rounded-full w-[220px] bg-[#F36F00] p-[16px] h-[53px] font-semibold text-white
-                            disabled:bg-gray-200'
+                    className='mt-2 md:mt-0 rounded-full w-[220px] md:w-[220px] bg-[#F36F00] p-[12px] md:p-[16px] h-[53px] font-semibold text-white
+                disabled:bg-gray-200'
                 >
                     {loading ? 'Subscribing...' : 'Subscribe'}
                 </button>
             </form>
+
 
             {/* Modal */}
             {showModal && (
@@ -78,4 +79,4 @@ const SecondContactLayer = () => {
     )
 }
 
-export default SecondContactLayer
+export default SecondContactLayer;

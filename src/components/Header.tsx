@@ -37,7 +37,7 @@ const Header = () => {
     }, [isMenuOpen]);
 
     return (
-        <header className='flex items-center justify-between font-mulish py-3 px-16 bg-white shadow-lg sticky top-0 z-50'>
+        <header className='flex items-center justify-between font-mulish py-3 lg:px-16 sm:px-4 md:px-4 bg-white shadow-lg sticky top-0 z-50'>
             <div className='flex items-center'>
                 <img src={logo} alt='rare-fit-logo' className='flex-shrink-0 mr-16 cursor-pointer' />
 
