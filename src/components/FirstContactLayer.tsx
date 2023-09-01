@@ -53,7 +53,7 @@ const FirstContactLayer = () => {
                     <Jelly size={50} color='#F36F00' />
                 </div>
             )}
-            <div className='absolute inset-0 w-[90%] h-full z-[-10] mt-[200px] object-contain md:hidden sm:hidden' style={{ backgroundImage: `url(${phoneBgIcon})`, filter: 'blur(1px)' }} />
+            <div className='absolute inset-0 w-[90%] h-full z-[-10] mt-[200px] object-contai' style={{ backgroundImage: `url(${phoneBgIcon})`, filter: 'blur(1px)' }} />
 
 
             {/* Left Section */}
